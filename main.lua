@@ -28,6 +28,8 @@ end
 --
 -- print_r()
 --
+-- The returned table (array) will be 1 based, not 0 based.
+--
 -- @see http://php.net/manual/en/function.print-r.php
 --
 function PHP.print_r(t, return_t)
