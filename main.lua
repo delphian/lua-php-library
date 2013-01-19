@@ -26,6 +26,20 @@ function PHP.count(table)
 end
 
 --
+-- empty()
+--
+function PHP.empty(table)
+  local empty = false
+  if (table == nil) then
+    empty = true
+  end
+  if ((type(table) == "table") and (next(table) == nil)) then
+    empty = true
+  end
+  return empty
+end
+
+--
 -- print_r()
 --
 -- The returned table (array) will be 1 based, not 0 based.
