@@ -32,8 +32,7 @@ function PHP.empty(table)
   local empty = false
   if (table == nil) then
     empty = true
-  end
-  if ((type(table) == "table") and (next(table) == nil)) then
+  elseif ((type(table) == "table") and (next(table) == nil)) then
     empty = true
   end
   return empty
